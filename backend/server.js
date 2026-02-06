@@ -49,7 +49,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://your-vercel-app.vercel.app", // change later
+      "https://mern-wrap-it-up.vercel.app", // your actual Vercel URL
     ],
     credentials: true,
   })
@@ -59,17 +59,13 @@ app.use(express.json());
 
 // ✅ Routes
 app.use("/api/auth", require("./routes/authRoutes"));
-app.use("/api/menu", require("./routes/menuRoutes"));
+app.use("/api/menuItems", require("./routes/menuRoutes")); // your frontend calls this
 app.use("/api/orders", require("./routes/orderRoutes"));
 app.use("/api/categories", require("./routes/categoryRoutes"));
 
 // ✅ Test route
 app.get("/", (req, res) => res.send("API is running..."));
 
-// ✅ Start server
+// ✅ Start server (Railway uses process.env.PORT)
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () =>
-  console.log(`Server running on port ${PORT}`)
-);
-
-
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
