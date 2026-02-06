@@ -1,7 +1,9 @@
 import axios from "axios";
 
 const API_BASE =
-  process.env.NEXT_PUBLIC_API_BASE || "http://localhost:5000";
+  // process.env.NEXT_PUBLIC_API_BASE || "http://localhost:5000";
+  process.env.NEXT_PUBLIC_API_BASE;
+
 
 // ✔ Fetch ALL menu items
 export const apiGetAllMenu = async () => {
