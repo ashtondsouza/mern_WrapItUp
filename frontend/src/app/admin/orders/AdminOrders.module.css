@@ -1,0 +1,141 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* ORDER CARD */
+.card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.orderId {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* STATUS BADGES */
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* STATUS COLORS */
+.PENDING {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.PREPARING {
+  background: #cce5ff;
+  color: #004085;
+}
+
+.READY {
+  background: #d4edda;
+  color: #155724;
+}
+
+.COMPLETED {
+  background: #e2e3e5;
+  color: #383d41;
+}
+
+/* ITEMS LIST */
+.items {
+  padding-left: 18px;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.items li {
+  margin-bottom: 4px;
+}
+
+/* FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.date {
+  color: #777;
+}
+
+/* STATES */
+.center {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* ADMIN EXTRA (OPTIONAL) */
+.customer {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.switchBtn {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.switchBtn:hover {
+  opacity: 0.85;
+}
+.sectionTitle {
+  margin: 28px 0 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+
+.completedCard {
+  opacity: 0.7;
+  background: #f7f7f7;
+  border-left: 4px solid #22c55e;
+}
+.completedCard .status {
+  font-weight: 600;
+}

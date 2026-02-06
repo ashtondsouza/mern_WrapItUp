@@ -1,0 +1,78 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #f1f1f1;
+  border-bottom: 0.2rem solid #e0e0e0;
+  
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  /* gap: 2rem; */
+  position: relative;
+  left: 0.5rem;
+ 
+
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 0.3rem;
+
+  object-fit: contain;
+}
+
+.brand {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #cb8742;
+}
+
+.second{
+  color: rgb(51, 143, 80);
+}
+.third{
+  color: rgb(202, 98, 98);
+}
+
+.links {
+  display: flex;
+  flex: 1;
+  justify-content: end;
+  position: relative;
+  right: 2rem; 
+  gap: 2rem;
+}
+.links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #555;
+  transition: color 0.2s ease-in-out;
+}
+
+.links a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.authBtn {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #c18930;
+  transition: color 0.2s ease-in-out;
+  border: none;
+  font-weight: 600;
+}
+
+.authBtn:hover {
+  color: #5a8537;
+  text-decoration: underline;
+}
